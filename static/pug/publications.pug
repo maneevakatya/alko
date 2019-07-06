@@ -1,0 +1,73 @@
+include blocks/blocks
+
+doctype html
+html(lang="ru")
+	+head
+	body.horizontal.first
+		+header
+		.publications
+			.publications__over
+				h1.publications__title Публикации
+				.publications__tags
+					a(href="#").publications__tag интервью
+					a(href="#").publications__tag научные статьи
+					a(href="#").publications__tag популярные статьи
+				.publications__text
+					p ПУБЛИКАЦИЯ (от лат. publico — объявляю всенародно) — 1) доведение чего-либо до всеобщего сведения посредством печати, радиовещания или телевидения. 
+			.publications__links
+				.publications__element
+					a(href="#").publications__element-link
+					.publications__bg(style="background-image: url('./img/publications/bg-1.jpg')")
+					.publications__element-info
+						.publications__element-subtitle
+							i.publications__element-date 22 апреля 2019
+							.publications__element-tags
+								a(href="#").publications__element-tag интервью
+						p.publications__element-title формирование лидеров среди молодежи
+				.publications__element
+					a(href="#").publications__element-link
+					.publications__bg(style="background-image: url('./img/publications/bg-2.jpg')")
+					.publications__element-info
+						.publications__element-subtitle
+							i.publications__element-date 12 апреля 2019
+							.publications__element-tags
+								a(href="#").publications__element-tag научныестатьи
+						p.publications__element-title Курс на марс
+				.publications__element
+					a(href="#").publications__element-link
+					.publications__bg(style="background-image: url('./img/publications/bg-3.jpg')")
+					.publications__element-info
+						.publications__element-subtitle
+							i.publications__element-date 2 апреля 2019
+							.publications__element-tags
+								a(href="#").publications__element-tag научныестатьи
+								a(href="#").publications__element-tag популярныестатьи
+						p.publications__element-title новые тенденции в сфере управления
+				.publications__element
+					a(href="#").publications__element-link
+					.publications__bg(style="background-image: url('./img/publications/bg-4.jpg')")
+					.publications__element-info
+						.publications__element-subtitle
+							i.publications__element-date 27 марта 2019
+							.publications__element-tags
+								a(href="#").publications__element-tag научныестатьи
+						p.publications__element-title Кто он — тренер мечты?
+				.publications__element
+					a(href="#").publications__element-link
+					.publications__bg(style="background-image: url('./img/publications/bg-5.jpg')")
+					.publications__element-info
+						.publications__element-subtitle
+							i.publications__element-date 21 марта 2019
+							.publications__element-tags
+								a(href="#").publications__element-tag интервью
+						p.publications__element-title james woudhuysen
+				.publications__element
+					a(href="#").publications__element-link
+					.publications__bg(style="background-image: url('./img/publications/bg-6.jpg')")
+					.publications__element-info
+						.publications__element-subtitle
+							i.publications__element-date 14 марта 2019
+							.publications__element-tags
+								a(href="#").publications__element-tag популярныестатьи
+						p.publications__element-title Рецепт пирожков с капустой
+		+scripts

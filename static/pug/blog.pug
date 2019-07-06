@@ -1,0 +1,84 @@
+include blocks/blocks
+
+doctype html
+html(lang="ru")
+	+head
+	body.horizontal.first
+		+header
+		.blog
+			.blog__over
+				h1.blog__title Блог
+				.blog__tags
+					a(href="#").blog__tag о себе
+					a(href="#").blog__tag работа
+					a(href="#").blog__tag спорт
+					a(href="#").blog__tag события
+					a(href="#").blog__tag о жизни
+				.blog__text
+					p Здесь вы найдете мои заметки о событиях, которыми мне захотелось с вами поделиться — о моих первом марафоне и Айронмене, об интересных событиях и наблюдениях.
+			.blog__links
+				.blog__element
+					a(href="#").blog__element-link
+					.blog__bg(style="background-image: url('./img/blog/bg-1.jpg')")
+					.blog__element-info
+						.blog__element-subtitle
+							i.blog__element-date 13 июня 2018
+							.blog__element-tags
+								a(href="#").blog__element-tag бег
+								a(href="#").blog__element-tag ультрамарафон
+								a(href="#").blog__element-tag спорт
+						p.blog__element-title Ультрамарафон Comrades 2018
+				.blog__element
+					a(href="#").blog__element-link
+					.blog__bg(style="background-image: url('./img/blog/bg-2.jpg')")
+					.blog__element-info
+						.blog__element-subtitle
+							i.blog__element-date 31 декабря 2017
+							.blog__element-tags
+								a(href="#").blog__element-tag итогигода
+								a(href="#").blog__element-tag ясуппер
+								a(href="#").blog__element-tag достижения
+						p.blog__element-title Итоги 2017
+				.blog__element
+					a(href="#").blog__element-link
+					.blog__bg(style="background-image: url('./img/blog/bg-3.jpg')")
+					.blog__element-info
+						.blog__element-subtitle
+							i.blog__element-date 18 ноября 2017
+							.blog__element-tags
+								a(href="#").blog__element-tag осебе
+								a(href="#").blog__element-tag особоемнение
+						p.blog__element-title Ты что, зазнался?
+				.blog__element
+					a(href="#").blog__element-link
+					.blog__bg(style="background-image: url('./img/blog/bg-4.jpg')")
+					.blog__element-info
+						.blog__element-subtitle
+							i.blog__element-date 10 октября 2017
+							.blog__element-tags
+								a(href="#").blog__element-tag особоемнение
+								a(href="#").blog__element-tag спорт
+						p.blog__element-title Кто он — тренер мечты?
+				.blog__element
+					a(href="#").blog__element-link
+					.blog__bg(style="background-image: url('./img/blog/bg-5.jpg')")
+					.blog__element-info
+						.blog__element-subtitle
+							i.blog__element-date 12 июня 2017
+							.blog__element-tags
+								a(href="#").blog__element-tag события
+								a(href="#").blog__element-tag бизнес
+								a(href="#").blog__element-tag развитие
+						p.blog__element-title james woudhuysen
+				.blog__element
+					a(href="#").blog__element-link
+					.blog__bg(style="background-image: url('./img/blog/bg-6.jpg')")
+					.blog__element-info
+						.blog__element-subtitle
+							i.blog__element-date 8 марта 2017
+							.blog__element-tags
+								a(href="#").blog__element-tag осебе
+								a(href="#").blog__element-tag кухня
+								a(href="#").blog__element-tag пирожки
+						p.blog__element-title Рецепт пирожков с капустой
+		+scripts

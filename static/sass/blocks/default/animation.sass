@@ -1,0 +1,141 @@
+.background
+	position: absolute
+	left: 0
+	top: 0
+	height: 0
+	width: 100%
+	z-index: -1
+	transition: 1.5s height
+
+	&--green
+		background-color: #4b504d
+
+	&--golden
+		background-color: #8d8267
+
+	&--blue
+		background-color: #475cbc
+
+.logo__link
+	span:nth-child(1)
+		position: relative
+		left: -20px
+		opacity: 0
+		transition-delay: 2.5s
+		transition: .8s left, .5s opacity
+
+	span:nth-child(2)
+		position: relative
+		left: -20px
+		opacity: 0
+		transition-delay: 2.9s
+		transition: .8s left, .5s opacity
+
+	i
+		position: relative
+		left: -20px
+		opacity: 0
+		transition-delay: 3.3s
+		transition: .8s left, .5s opacity
+
+.nav
+	position: relative
+	left: -20px
+	opacity: 0
+	transition-delay: 3.8s
+	transition: .8s left, .5s opacity
+
+.developers
+	position: relative
+	bottom: -20px
+	opacity: 0
+	transition-delay: 4.1s
+	transition: .8s bottom, .5s opacity
+
+.footer__language
+	position: relative
+	bottom: -20px
+	opacity: 0
+	transition-delay: 4.4s
+	transition: .8s bottom, .5s opacity
+
+.social
+	position: relative
+	bottom: -20px
+	opacity: 0
+	transition-delay: 4.7s
+	transition: .8s bottom, .5s opacity
+
+.work
+	position: relative
+	top: -20px
+	opacity: 0
+	transition-delay: 4.7s
+	transition: .8s top, .5s opacity
+
+.animate
+	.logo__link
+		span
+			left: 0
+			opacity: 1
+		i
+			left: 0
+			opacity: 1
+
+	.nav
+		left: 0
+		opacity: 1
+
+	.developers,
+	.social,
+	.footer__language
+		bottom: 0
+		opacity: 1
+
+	.work
+		transition-delay: 1s
+		top: 0
+		opacity: 1
+
+	&.first
+		.hero__photo--first
+			width: 100%
+			transition-delay: 1s
+			z-index: 1
+
+		.background--green
+			height: 100%
+			transition-delay: unset
+
+		.background--blue
+			z-index: -2
+			transition-delay: 1.5s
+
+	&.second
+		.hero__photo--second
+			width: 100%
+			transition-delay: 1s
+			z-index: 1
+
+		.background--golden
+			height: 100%
+			transition-delay: unset
+
+		.background--green
+			z-index: -2
+			transition-delay: 1.5s
+
+	&.third
+		.hero__photo--third
+			width: 100%
+			transition-delay: 1s
+			z-index: 1
+
+		.background--blue
+			height: 100%
+			transition-delay: unset
+
+		.background--golden
+			z-index: -2
+			transition-delay: 1.5s
+

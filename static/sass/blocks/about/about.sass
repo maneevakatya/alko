@@ -1,0 +1,140 @@
+.about
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	overflow-y: scroll
+
+	&__over
+		padding-top: 93px
+		padding-left: 158px
+		padding-right: 238px
+
+	&__text
+		font-size: 18px
+		line-height: 32px
+		font-weight: 300
+		font-family: 'Open Sans'
+		color: #020202
+		margin-bottom: 50px
+
+	&__title
+		font-weight: normal
+		font-size: 38px
+		line-height: 41px
+		color: #4b504d
+		margin-bottom: 38px
+
+	&__history
+		max-width: 1150px
+		width: 100%
+		position: relative
+
+		&:before
+			position: absolute
+			content: ""
+			background: linear-gradient(90deg, white 40%, transparent)
+			left: -65px
+			z-index: 999
+			width: 60px
+			height: 100%
+
+		&:after
+			position: absolute
+			content: ""
+			background: linear-gradient(90deg, transparent 10%, white 78%)
+			right: -73px
+			top: 0
+			z-index: 999
+			width: 100px
+			height: 100%
+
+	&__element
+		display: flex
+		justify-content: space-between
+		width: 460px
+
+
+	&__element-img
+
+			width: 161px
+			height: 161px
+			border: 8px solid #adadad
+			margin-right: 20px
+			position: relative
+			flex-shrink: 0
+
+			&:before
+				content: ""
+				position: absolute
+				width: 8px
+				height: 102px
+				background-color: #adadad
+				left: 50%
+				transform: translateX(-50%)
+				top: -103px
+			
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+
+	&__element-text
+		padding-top: 15px
+		width: 270px
+
+		span
+			font-size: 27px
+			color: #4b504d
+
+		p
+			font-weight: 300
+			font-size: 16px
+			line-height: 24px
+			font-family: 'Open Sans'
+
+.line
+	height: 8px
+	width: 1250px
+	background-color: #adadad
+	position: absolute
+	top: 50%
+	left: -50px
+	transform: translateY(-50%)
+
+.swiper-slide
+	height: 536px
+	width: 100%
+	display: flex
+	align-items: flex-end
+	margin-left: -120px
+
+	&:first-child
+		margin-left: 0
+
+	&:nth-child(2n)
+		align-items: flex-start
+		.about__element-img
+			&:before
+				top: auto
+				bottom: -103px
+
+
+.swiper-container
+	overflow: visible
+
+.swiper-button-prev, .swiper-button-next
+	width: 83px
+	height: 144px
+	background-color: #c9c9c9
+	top: 50%
+	transform: translateY(-50%)
+
+.swiper-button-prev
+	left: -158px
+	background-image: url("/img/about/arrow-left.png")
+
+.swiper-button-next
+	right: -203px
+	background-image: url("/img/about/arrow-right.png")
+	

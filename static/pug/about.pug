@@ -1,0 +1,47 @@
+include blocks/blocks
+
+doctype html
+html(lang="ru")
+	+head
+	body.horizontal.first
+		+header
+		.about
+			.about__over
+				h1.about__title Биография
+				.about__text
+					p Я не знаю, хорошо это или плохо, но мне в жизни для достижения результата нужен какой-то серьезный вызов. Я не умею заниматься процессами ради процессов или ради абстрактной цели.
+				.about__history
+					.line
+					.swiper-container
+						.swiper-wrapper
+							.swiper-slide 
+								.about__element
+									.about__element-img
+										img(src="./img/about/about-img2.jpg", alt="")
+									.about__element-text 
+										span 1986
+										p Поступил на дневное отделение Московского Автомобильно-дорожного института на факультет автомобильного транспорта.
+							.swiper-slide 
+								.about__element
+									.about__element-img
+										img(src="./img/about/about-img1.jpg", alt="")
+									.about__element-text 
+										span 1993
+										p Основал компанию, которая специализировалась на подборе автомобильной краски.
+							.swiper-slide 
+								.about__element
+									.about__element-img
+										img(src="./img/about/about-img4.jpg", alt="")
+									.about__element-text 
+										span 2010
+										p Строительство лакокрасочного завода в Твери, который применяет самые современные мировые технологии. 
+							.swiper-slide 
+								.about__element
+									.about__element-img
+										img(src="./img/about/about-img3.jpg", alt="")
+									.about__element-text 
+										span 2011
+										p Возглавил Департамент поддержки малого и среднего предпринимательства.
+						.swiper-button-prev
+						.swiper-button-next
+		+scripts
