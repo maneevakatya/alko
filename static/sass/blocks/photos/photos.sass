@@ -1,7 +1,6 @@
-.work
+.photos
 	display: flex
 	flex-direction: column
-	justify-content: space-between
 	overflow-y: scroll
 
 	&__over
@@ -14,65 +13,20 @@
 		font-size: 38px
 		line-height: 41px
 		color: #4b504d
-		margin-bottom: 70px
-		position: relative
-		display: inline-block
-		margin-right: 80px
-		border-bottom: 2px solid #4b504d
-		transition: border-color 0.5s ease
+		margin-bottom: 50px
 
-		&:hover
-			border-color: transparent
-
-		&:after
-			content: ">"
-			position: absolute
-			top: -3px
-			right: -55px
-
-	&__subtitle
-		display: inline-block
-		font-weight: normal
-		font-size: 38px
-		line-height: 41px
-		color: #4b504d
-
-	
-	&__item
-		margin-bottom: 110px
-		display: flex
-		&:last-child
-			margin-bottom: 100px
-
-	&__item-text
+	&__text
 		font-size: 18px
 		line-height: 32px
 		font-weight: 300
 		font-family: 'Open Sans'
 		color: #020202
-
-		p
-			margin-bottom: 50px
+		margin-bottom: 50px
 	
-	&__item-logo
-		max-width: 332px
-		width: 100%
-		margin-right: 35px
-		flex-shrink: 0
-		text-align: center
-		margin-top: 9px
-
-	&__item-link
-		color: #020202
-		border-bottom: 1px solid #020202
-		transition: border-color 0.5s ease
-
-		&:hover
-			border-color: transparent
-
 	&__links
 		display: flex
 		flex-direction: row
+		flex-wrap: wrap
 
 	&__element
 		width: calc(100% / 3)
@@ -82,11 +36,11 @@
 		flex-direction: column
 
 		&:nth-child(2)
-			.work__element-info
+			.photos__element-info
 				background-color: #1b1b1b
 
 		&:hover
-			.work__element-info
+			.photos__element-info
 				height: 110px
 
 	&__bg

@@ -1,0 +1,75 @@
+.album
+	overflow-y: scroll
+	font-size: 0
+	line-height: 0
+
+	&__over
+		padding-top: 93px
+		padding-left: 158px
+		padding-right: 158px
+
+	&__title
+		font-weight: normal
+		font-size: 38px
+		line-height: 41px
+		color: #4b504d
+		margin-bottom: 50px
+		position: relative
+		display: inline-block
+		margin-right: 80px
+		border-bottom: 2px solid #4b504d
+		transition: border-color 0.5s ease
+
+		&:hover
+			border-color: transparent
+
+		&:after
+			content: ">"
+			position: absolute
+			top: -3px
+			right: -55px
+
+	&__subtitle
+		display: inline-block
+		font-weight: normal
+		font-size: 38px
+		line-height: 41px
+		color: #4b504d
+
+	&__text
+		font-size: 18px
+		line-height: 32px
+		font-weight: 300
+		font-family: 'Open Sans'
+		color: #020202
+		margin-bottom: 50px
+
+	&__photos
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+
+	&__element
+		width: calc(100% / 3)
+		height: 354px
+		position: relative
+		display: flex
+		flex-direction: column
+		transition: opacity 0.5s ease
+
+		&:hover
+			opacity: 0.8
+
+	&__element-link
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+

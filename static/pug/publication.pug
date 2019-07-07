@@ -1,0 +1,50 @@
+include blocks/blocks
+
+doctype html
+html(lang="ru")
+	+head
+	body.horizontal.first
+		+header
+		.publication
+			.publication__over
+				a(href="#").publication__title Публикации 
+				h1.publication__subtitle формирование лидеров среди молодежи
+				.publication__tags
+					a(href="#").publication__tag популярныестатьи
+				.publication__text
+					p Сто тысяч человек подали заявку на участие в конкурсе. Это было раз в десять больше, чем ожидали организаторы. Сначала предварительный отбор, потом очные соревнования по округам. И затем всероссийский финал. Победители получат миллион рублей, они смогут потратить его на дополнительное образование. 
+					p Конкурс был выстроен абсолютно прозрачно. По блату попасть в победители невозможно. 
+				.publication__picture
+					img(src="/img/publication/pic1.jpg", alt="")
+				.publication__text
+					p Победители конкурса попадают в кадровую обойму. Им будет легче продвинуться по карьерной лестнице. Некоторые получат предложения от государственных структур. Но сами назначения — не самоцель, плана по назначениям нет. И наконец, те, кто победить не смог или кому не повезло, могут попробовать в следующий раз: конкурс будет регулярным.
+				.publication__quote
+					p Владимир Владимирович Путин, по прямому поручению которого проводится этот конкурсный отбор, не только поставил задачу провести этот конкурс, но и лично внимательно следит за ходом конкурса, будет встречаться с победителями этого конкурса.
+				.publication__text
+					p Цель — поиск и поддержка перспективных руководителей нового поколения. Ограничения только по возрасту — до 50 лет. На первом этапе надо было всего лишь подать заявку. Тогда никто и подумать не мог, какой интерес вызовет этот экспериментальный проект. Рассчитывали на 10 тысяч анкет. В реальности их число достигло почти 200 тысяч. Эти заявки прошли дистанционный отбор: в формате онлайн-тестирования. Проверяли общие знания, а также тест на управленческий потенциал участников. Очно они впервые встретились друг с другом на полуфиналах в своих федеральных округах. До этого этапа добрались 2691 человек. Задание — решить бизнес-задачи. По результатам лучшие 300 человек в финале.
+				.publication__btns
+					.publication__btn
+						a(href="#").publication__btn-more Посмотреть оригинал
+					.publication__share
+						span Поделиться
+						.addthis_inline_share_toolbox
+			.publication__links
+				.publication__element
+					a(href="#").publication__element-link
+					.publication__bg(style="background-image: url('./img/works/bg-1.jpg')")
+					.publication__element-info
+						p.publication__element-title Конференция «кадры россии»
+						i.publication__element-subtitle Выступил с докладом о кадровом потенциале нашей страны
+				.publication__element
+					a(href="#").publication__element-link
+					.publication__bg(style="background-image: url('./img/works/bg-2.jpg')")
+					.publication__element-info
+						p.publication__element-title Курчатовские чтения
+						i.publication__element-subtitle В академии РАНХиГС, от первого лица
+				.publication__element
+					a(href="#").publication__element-link
+					.publication__bg(style="background-image: url('./img/works/bg-3.jpg')")
+					.publication__element-info
+						p.publication__element-title Россия страна возможностей
+						i.publication__element-subtitle Послание Президента России Федеральному собранию
+		+scripts

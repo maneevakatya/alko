@@ -1,0 +1,208 @@
+.publication
+	overflow-y: scroll
+
+	&__over
+		padding-top: 93px
+		padding-left: 158px
+		padding-right: 158px
+
+	&__title
+		font-weight: normal
+		font-size: 38px
+		line-height: 41px
+		color: #4b504d
+		margin-bottom: 19px
+		position: relative
+		display: inline-block
+		margin-right: 80px
+		border-bottom: 2px solid #4b504d
+		transition: border-color 0.5s ease
+
+		&:hover
+			border-color: transparent
+
+		&:after
+			content: ">"
+			position: absolute
+			top: -3px
+			right: -50px
+
+	&__subtitle
+		display: inline-block
+		font-weight: normal
+		font-size: 38px
+		line-height: 41px
+		color: #4b504d
+		margin-bottom: 30px
+	
+	&__tags
+		margin-bottom: 45px
+	
+	&__tag
+		font-size: 27px
+		font-style: italic
+		font-family: "Garamond"
+		color: #4b504d
+		margin-right: 25px
+		padding-left: 13px
+		position: relative
+
+		&:hover:after
+			background-color: transparent
+
+		&:before
+			content: "#"
+			position: absolute
+			left: 0
+			bottom: 0
+			font-size: 20px
+
+		&:after
+			content: ""
+			position: absolute
+			width: 100%
+			height: 1px
+			background-color: #4b504d
+			bottom: 0
+			left: 0
+			transition: background-color 0.5s ease
+
+	&__text
+		p
+			font-size: 18px
+			line-height: 32px
+			font-weight: 300
+			font-family: 'Open Sans'
+			color: #020202
+			margin-bottom: 50px
+
+	&__picture
+		margin-bottom: 40px
+		img
+			width: 100%
+	
+	&__quote
+		max-width: 710px
+		width: 100%
+		margin: 0 auto
+		padding: 0 70px
+		margin-bottom: 50px
+		position: relative
+		box-sizing: border-box
+
+		&:before
+			content: "«"
+			position: absolute
+			left: 0
+			top: 0
+			font-family: 'Open Sans'
+			font-size: 108px
+			line-height: 0
+
+
+		&:after
+			content: "»"
+			position: absolute
+			right: 0
+			bottom: 30px
+			font-family: 'Open Sans'
+			font-size: 108px
+			line-height: 0
+
+		p
+			font-size: 18px
+			line-height: 32px
+			font-weight: 300
+			font-family: 'Open Sans'
+			color: #020202
+	
+	&__btns
+		display: flex
+		justify-content: space-between
+		margin-bottom: 55px
+	
+	&__btn-more
+		display: block
+		background-color: #4b504d
+		color: #fff
+		font-size: 24px
+		max-width: 392px
+		width: 100%
+		height: 50px
+		line-height: 1
+		padding: 15px 40px
+		box-sizing: border-box
+
+	&__share
+		display: flex
+		justify-content: space-between
+		align-items: center
+		max-width: 600px
+		width: 100%
+
+		span
+			font-size: 24px
+			color: #4b504d
+
+	&__links
+		display: flex
+		flex-direction: row
+
+	&__element
+		width: calc(100% / 3)
+		height: 354px
+		position: relative
+		display: flex
+		flex-direction: column
+
+		&:nth-child(2)
+			.publication__element-info
+				background-color: #1b1b1b
+
+		&:hover
+			.publication__element-info
+				height: 110px
+
+	&__bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: calc(100% - 100px)
+		background-size: cover
+
+	&__element-info
+		margin-top: auto
+		height: 100px
+		background-color: #232323
+		padding: 0 25px
+		padding-bottom: 30px
+		box-sizing: border-box
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		z-index: 1
+		transition: .8s height
+
+	&__element-title
+		color: #ffffff
+		font-size: 16px
+		line-height: 20px
+		font-weight: normal
+
+	&__element-subtitle
+		color: #ffffff
+		font-size: 20px
+		line-height: 22px
+
+	&__element-link
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+
+.at-style-responsive .at-share-btn
+	&:not(:last-child)
+		margin-right: 15px

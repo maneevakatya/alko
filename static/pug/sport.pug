@@ -1,0 +1,38 @@
+include blocks/blocks
+
+doctype html
+html(lang="ru")
+	+head
+	body.horizontal.first
+		+header
+		.sport
+			.sport__over
+				h1.sport__title Спортивные
+					br
+					| достижения
+				.sport__text
+					p Моё увлечение бегом берёт своё начало в 2015 году, когда я пробежал свой первый и самый экстремальных марафон в своей жизни, Байкальский ледовый марафон, за 4 часа и 55 минут. С тех пор я пробежал ещё N марафонов и ощутимо улучшил свои показатели.
+				.sport__logos
+					img(src="/img/sport/logo1.jpg", alt="")
+					img(src="/img/sport/logo2.jpg", alt="")
+					img(src="/img/sport/logo3.jpg", alt="")
+			.sport__links
+				.sport__element
+					a(href="#").sport__element-link
+					.sport__bg(style="background-image: url('./img/sport/bg-1.jpg')")
+					.sport__element-info
+						p.sport__element-title Мой первый марафон
+						i.sport__element-subtitle Байкальский ледовый. Только хардкор.
+				.sport__element
+					a(href="#").sport__element-link
+					.sport__bg(style="background-image: url('./img/sport/bg-2.jpg')")
+					.sport__element-info
+						p.sport__element-title Лучший в мире тренер
+						i.sport__element-subtitle Такого ещё поискать!
+				.sport__element
+					a(href="#").sport__element-link
+					.sport__bg(style="background-image: url('./img/sport/bg-3.jpg')")
+					.sport__element-info
+						p.sport__element-title Ультрамарафон Comrades 2018
+						i.sport__element-subtitle 90 километров по африканским холмам
+		+scripts
