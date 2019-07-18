@@ -1,0 +1,86 @@
+.post
+	overflow-y: scroll
+	width: 100%
+	
+	&__btns
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin-bottom: 55px
+	
+
+	&__share
+		display: flex
+		justify-content: space-between
+		align-items: center
+		max-width: 600px
+		width: 100%
+
+		span
+			font-size: 24px
+			color: #4b504d
+
+	&__links
+		display: flex
+		flex-direction: row
+
+	&__element
+		height: 354px
+		position: relative
+		display: flex
+		flex-direction: column
+
+		&:nth-child(2)
+			.post__element-info
+				background-color: #1b1b1b
+
+		&:hover
+			.post__element-info
+				height: 110px
+
+	&__bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: calc(100% - 100px)
+		background-size: cover
+
+	&__element-info
+		margin-top: auto
+		height: 100px
+		background-color: #232323
+		padding: 0 25px
+		padding-bottom: 30px
+		box-sizing: border-box
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		z-index: 1
+		transition: .8s height
+
+	&__element-title
+		color: #ffffff
+		font-size: 16px
+		line-height: 20px
+		font-weight: normal
+
+	&__element-subtitle
+		color: #ffffff
+		font-size: 20px
+		line-height: 22px
+
+	&__element-link
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+	
+	.btn
+		margin-bottom: 50px
+
+.at-style-responsive .at-share-btn
+	&:not(:last-child)
+		margin-right: 15px

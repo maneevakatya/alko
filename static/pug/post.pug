@@ -5,9 +5,15 @@ html(lang="ru")
 	+head
 	body.horizontal.first
 		+header
-		.article
+		.post
 			.wrapper
-				h1.title  Диссертация
+				a(href="#").title.title--breadcrumbs  Блог 
+				h1.title.subtitle  Ультрамарафон Comrades 2018
+				.tags
+					a(href="#").tag бег
+					a(href="#").tag ультрамарафон
+					a(href="#").tag спорт
+					
 				.wis-content
 
 					p И снова темная 
@@ -16,7 +22,7 @@ html(lang="ru")
 						b разглядеть 
 						| быстро меняющиеся пейзажи, думаю о и невпопад отвечаю на бесконечные вопросы веселого водителя Uber. Неожиданно мы упираемся в дикую пробку. Машины почти не двигаются, и через полчаса меня начинает охватывать уже нешуточное волнение. Выехал вроде достаточно рано — в начале четвёртого, но поездка из Дурбана до Питермарицбурга, которая занимает обычно меньше часа, продолжается уже почти два. Таксист, искренне желая помочь мне успеть на Comrades, сворачивает с трассы, долго петляет по каким-то страшным трущобам и наконец упирается в тупик…
 						a(href="#") ультрамарафон
-						| думаю о и невпопад отвечаю на бесконечные вопросы веселого водителя Uber. 
+						|  думаю о и невпопад отвечаю на бесконечные вопросы веселого водителя Uber. 
 					ul
 						li ночь
 						li ночь
@@ -47,12 +53,42 @@ html(lang="ru")
 							td rgdfg
 							td sdfdg
 
-					img(src="./img/article/picture.jpg", alt="")
+					img(src="./img/post/pic1.jpg", alt="")
 					
 					p До места старта остаётся чуть меньше 5 км, я выскакиваю из машины и бегу по навигатору к ратуше. Какие-то местные бомжи, через которых я практически перепрыгиваю, что-то кричат мне вслед на местном языке. «Желают успешного старта, наверное» — думаю я с улыбкой, и на всякий случай добавляю темп.
 					quote 
 						p Специально для тех, кто считает, что ультрамарафон — это что-то сверхъестественное и невозможное. Уверен, что почти каждый читатель этих строк независимо от возраста и состояния здоровья способен на такой старт. Конечно, очень важна грамотная подготовка. Но главное — сила воли и мотивация. 
-					p Проход на старт уже закрывается, меня пытаются отправить в последний сектор, но я перелезаю через забор и успеваю как раз к Шошолозе — народной южноафриканской
+					p Проход на старт уже закрывается, меня пытаются отправить в последний сектор, но я перелезаю через забор и успеваю как раз к Шошолозе — народной южноафриканской песне, с которой начинается старт легендарного ультрамарафона Комрадс. Подпеваю, как могу (с пением у меня не очень, но уж больно песня нравится), потом все затихает, раздаётся традиционный петушиный крик и выстрел стартового пистолета.
+				
+				.post__btns
+					.post__btn
+						a(href="#").btn Смотреть фотографии
+					.post__share
+						span.publication__share-text Поделиться
+						.addthis_inline_share_toolbox
+			.swiper-container.bottom-swiper
+				.swiper-wrapper
+					.swiper-slide 
+						.bottom-swiper__element
+							a(href="#").bottom-swiper__element-link
+							.bottom-swiper__element-bg(style="background-image: url('./img/works/bg-1.jpg')")
+							.bottom-swiper__element-info
+								a(href="#").bottom-swiper__element-title Конференция «кадры россии»
+								i.bottom-swiper__element-subtitle Выступил с докладом о кадровом потенциале нашей страны
+					.swiper-slide 
+						.bottom-swiper__element
+							a(href="#").bottom-swiper__element-link
+							.bottom-swiper__element-bg(style="background-image: url('./img/works/bg-2.jpg')")
+							.bottom-swiper__element-info
+								a(href="#").bottom-swiper__element-title Курчатовские чтения
+								i.bottom-swiper__element-subtitle В академии РАНХиГС, от первого лица
+					.swiper-slide 
+						.bottom-swiper__element
+							a(href="#").bottom-swiper__element-link
+							.bottom-swiper__element-bg(style="background-image: url('./img/works/bg-3.jpg')")
+							.bottom-swiper__element-info
+								a(href="#").bottom-swiper__element-title Россия страна возможностей
+								i.bottom-swiper__element-subtitle Послание Президента России Федеральному собранию
 		+page_footer
 		+agreement
 		+scripts

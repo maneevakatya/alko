@@ -6,9 +6,9 @@ html(lang="ru")
 	body.horizontal.first
 		+header
 		.work
-			.work__over
-				a(href="#").work__title Моя работа 
-				h1.work__subtitle Лидеры России
+			.wrapper
+				a(href="#").title.title--breadcrumbs  Моя работа 
+				h1.title.subtitle  Лидеры России
 				.work__item
 					.work__item-logo
 						img(src="./img/work/logo.jpg", alt="")
@@ -17,23 +17,29 @@ html(lang="ru")
 						p Вот уже на протяжении месяца, как федеральные и региональные СМИ информируют нас о проведении конкурса «Лидеры России». Кто до сих пор ничего о данном мероприятии не слышал, коротко скажу, что основной целью конкурса является выявление и последующая поддержка наиболее перспективных россиян, способных к управленческой деятельности. Победители конкурса получат возможность обучения в специализированных вузах. При этом в процессе обучения им будут закреплены личные кураторы, среди которых заявлены такие известные в стране лица, как: Герман Греф, Эльвира Набиуллина, Алексей Кудрин и ряд др. 
 						p Участие в конкурсе бесплатное.
 						a(href="#").work__item-link лидерыроссии.рф
-			.work__links
-				.work__element
-					a(href="#").work__element-link
-					.work__bg(style="background-image: url('./img/works/bg-1.jpg')")
-					.work__element-info
-						p.work__element-title Конференция «кадры россии»
-						i.work__element-subtitle Выступил с докладом о кадровом потенциале нашей страны
-				.work__element
-					a(href="#").work__element-link
-					.work__bg(style="background-image: url('./img/works/bg-2.jpg')")
-					.work__element-info
-						p.work__element-title Курчатовские чтения
-						i.work__element-subtitle В академии РАНХиГС, от первого лица
-				.work__element
-					a(href="#").work__element-link
-					.work__bg(style="background-image: url('./img/works/bg-3.jpg')")
-					.work__element-info
-						p.work__element-title Россия страна возможностей
-						i.work__element-subtitle Послание Президента России Федеральному собранию
+			.swiper-container.bottom-swiper
+				.swiper-wrapper
+					.swiper-slide 
+						.bottom-swiper__element
+							a(href="#").bottom-swiper__element-link
+							.bottom-swiper__element-bg(style="background-image: url('./img/works/bg-1.jpg')")
+							.bottom-swiper__element-info
+								a(href="#").bottom-swiper__element-title Конференция «кадры россии»
+								i.bottom-swiper__element-subtitle Выступил с докладом о кадровом потенциале нашей страны
+					.swiper-slide 
+						.bottom-swiper__element
+							a(href="#").bottom-swiper__element-link
+							.bottom-swiper__element-bg(style="background-image: url('./img/works/bg-2.jpg')")
+							.bottom-swiper__element-info
+								a(href="#").bottom-swiper__element-title Курчатовские чтения
+								i.bottom-swiper__element-subtitle В академии РАНХиГС, от первого лица
+					.swiper-slide 
+						.bottom-swiper__element
+							a(href="#").bottom-swiper__element-link
+							.bottom-swiper__element-bg(style="background-image: url('./img/works/bg-3.jpg')")
+							.bottom-swiper__element-info
+								a(href="#").bottom-swiper__element-title Россия страна возможностей
+								i.bottom-swiper__element-subtitle Послание Президента России Федеральному собранию
+		+page_footer
+		+agreement
 		+scripts

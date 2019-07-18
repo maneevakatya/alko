@@ -11,7 +11,8 @@ const icons = [dirs.source + '/i/**/*.{gif,png,jpg,jpeg,svg,ico}'];
 const jsList = [
 	dirs.source + '/js/ext/jquery.min.js',
 	dirs.source + '/js/ext/swiper.min.js',
-	dirs.source + '/js/ext/jquery.fancybox.min.js'
+	dirs.source + '/js/ext/jquery.fancybox.min.js',
+	dirs.source + '/js/ext/jquery.inputmask.bundle.min.js',
 ];
 
 const folder = process.env.folder;
@@ -40,6 +41,7 @@ const wait = require('gulp-wait');
 const sorting = require('postcss-sorting');
 const focus = require('postcss-focus');
 const short = require('postcss-short');
+const sortCSSmq = require('sort-css-media-queries');
 
 gulp.task('clean', function() {
 	return del(dirs.build);
@@ -53,7 +55,7 @@ gulp.task('sass', function () {
 			cascade: true
 		}),
 		mqpacker({
-			sort: true
+			sort: sortCSSmq
 		}),
 		sorting({
 			"sort-order": "yandex"

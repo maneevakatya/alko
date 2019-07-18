@@ -1,19 +1,8 @@
 .sport
-	display: flex
-	flex-direction: column
-	justify-content: space-between
 	overflow-y: scroll
+	width: 100%
 
-	&__over
-		padding-top: 93px
-		padding-left: 158px
-		padding-right: 158px
-
-	&__title
-		font-weight: normal
-		font-size: 38px
-		line-height: 41px
-		color: #4b504d
+	.title
 		margin-bottom: 48px
 
 	&__text
@@ -30,66 +19,10 @@
 		justify-content: center
 		align-items: center
 
-		img
+		a
+			transition: opacity 0.5s ease
+
 			&:not(:last-child)
 				margin-right: 197px
-
-	&__links
-		display: flex
-		flex-direction: row
-
-	&__element
-		width: calc(100% / 3)
-		height: 354px
-		position: relative
-		display: flex
-		flex-direction: column
-
-		&:nth-child(2)
-			.sport__element-info
-				background-color: #1b1b1b
-
-		&:hover
-			.sport__element-info
-				height: 110px
-
-	&__bg
-		position: absolute
-		left: 0
-		top: 0
-		width: 100%
-		height: calc(100% - 100px)
-		background-size: cover
-
-	&__element-info
-		margin-top: auto
-		height: 100px
-		background-color: #232323
-		padding: 0 25px
-		padding-bottom: 30px
-		box-sizing: border-box
-		display: flex
-		flex-direction: column
-		justify-content: flex-end
-		z-index: 1
-		transition: .8s height
-
-	&__element-title
-		color: #ffffff
-		font-size: 16px
-		line-height: 20px
-		font-weight: normal
-
-	&__element-subtitle
-		color: #ffffff
-		font-size: 20px
-		line-height: 22px
-
-	&__element-link
-		position: absolute
-		left: 0
-		top: 0
-		width: 100%
-		height: 100%
-		z-index: 1
-
+			&:hover
+				opacity: 0.8

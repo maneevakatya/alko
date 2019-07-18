@@ -1,0 +1,40 @@
+include blocks/blocks
+
+doctype html
+html(lang="ru")
+	+head
+	body.horizontal.first
+		+header
+		.feedback
+			.wrapper
+				h1.title  Задать 
+					br
+					| вопрос
+				.feedback__text
+					p Я буду рад, если через форму обратной связи вы будете присылать мне свои вопросы или предложения. 
+				form.feedback__form(method="post")
+					.feedback__field
+						label.feedback__label Имя
+						input(type="text", data-req="req").feedback__input
+					.feedback__field
+						label.feedback__label Телефон
+						input(type="text", data-req="req", data-type="mobile").feedback__input.feedback__input--phone
+					.feedback__field
+						label.feedback__label E-mail
+						input(type="text", data-req="req", data-type="email").feedback__input
+					.feedback__field.feedback__field--textarea
+						label.feedback__label Вопрос
+						textarea.feedback__input.feedback__textarea
+					.feedback__captcha
+						.feedback__captcha-img
+							img(src="./img/captcha.jpg", alt="")
+						input(type="text", placeholder="Введите код с картинки", data-req="req").feedback__input
+					.feedback__field.feedback__field--radio    
+						input(type="checkbox")#radio.feedback__radio
+						label(for="radio").feedback__label Даю согласие на&nbsp
+							a(data-fancybox, href="#agreement")  обработку персональных данных
+					.feedback__field
+						button(type="submit").btn Отправить
+		+page_footer
+		+agreement
+		+scripts

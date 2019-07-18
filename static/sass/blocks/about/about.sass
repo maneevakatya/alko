@@ -1,13 +1,7 @@
 .about
-	display: flex
-	flex-direction: column
-	justify-content: space-between
+	width: 100%
 	overflow-y: scroll
-
-	&__over
-		padding-top: 93px
-		padding-left: 158px
-		padding-right: 158px
+	position: relative
 
 	&__text
 		font-size: 18px
@@ -15,15 +9,15 @@
 		font-weight: 300
 		font-family: 'Open Sans'
 		color: #020202
-		margin-bottom: 50px
+		margin-bottom: 79px
 
-	&__title
-		font-weight: normal
-		font-size: 38px
-		line-height: 41px
-		color: #4b504d
-		margin-bottom: 38px
+	.title
+		margin-bottom: 41px
 
+	&__history-wrapper
+		&.wrapper
+			padding-top: 0
+			position: relative
 	&__history
 		max-width: 1150px
 		width: 100%
@@ -42,10 +36,10 @@
 			position: absolute
 			content: ""
 			background: linear-gradient(90deg, transparent 10%, white 78%)
-			right: -102px
+			right: -53px
 			top: 0
 			z-index: 999
-			width: 100px
+			width: 60px
 			height: 100%
 
 	&__element
@@ -56,8 +50,8 @@
 
 	&__element-img
 
-			width: 161px
-			height: 161px
+			width: 147px
+			height: 147px
 			border: 8px solid #adadad
 			margin-right: 20px
 			position: relative
@@ -71,7 +65,7 @@
 				background-color: #adadad
 				left: 50%
 				transform: translateX(-50%)
-				top: -103px
+				top: -110px
 			
 			img
 				width: 100%
@@ -93,45 +87,46 @@
 			line-height: 24px
 			font-family: 'Open Sans'
 
-.line
-	height: 8px
-	width: 1250px
-	background-color: #adadad
-	position: absolute
-	top: 50%
-	left: -50px
-	transform: translateY(-50%)
+	.line
+		height: 8px
+		width: calc(100% + 100px)
+		background-color: #adadad
+		position: absolute
+		top: 50%
+		left: -50px
+		transform: translateY(-50%)
 
-.swiper-slide
-	height: 536px
-	width: 100%
-	display: flex
-	align-items: flex-end
-	margin-left: -120px
+	.swiper-slide
+		height: 536px
+		width: 100%
+		display: flex
+		align-items: flex-end
+		margin-left: -143px
 
-	&:first-child
-		margin-left: 0
+		&:first-child
+			margin-left: 30px
 
-	&:nth-child(2n)
-		align-items: flex-start
-		.about__element-img
-			&:before
-				top: auto
-				bottom: -103px
+		&:nth-child(2n)
+			align-items: flex-start
+			.about__element-img
+				&:before
+					top: auto
+					bottom: -110px
 
 
-.swiper-button-prev, .swiper-button-next
-	width: 83px
-	height: 144px
-	background-color: #c9c9c9
-	top: 50%
-	transform: translateY(-50%)
+	.swiper-button-prev, .swiper-button-next
+		width: 83px
+		height: 144px
+		background-color: #c9c9c9
+		top: 534px
 
-.swiper-button-prev
-	left: -158px
-	background-image: url("/img/about/arrow-left.png")
+	.swiper-button-prev
+		left: 0
+		z-index: 999
+		background-image: url("../../img/about/arrow-left.png")
 
-.swiper-button-next
-	right: -203px
-	background-image: url("/img/about/arrow-right.png")
-	
+	.swiper-button-next
+		right: 0
+		z-index: 999
+		background-image: url("../../img/about/arrow-right.png")
+		

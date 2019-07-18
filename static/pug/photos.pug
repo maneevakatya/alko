@@ -6,45 +6,47 @@ html(lang="ru")
 	body.horizontal.first
 		+header
 		.photos
-			.photos__over
-				h1.photos__title Фотографии
+			.wrapper
+				h1.title  Фотографии
 				.photos__text
 						p Ретроконверсия национального наследия, не меняя концепции, изложенной выше, усиливает рейтинг. Экспертиза выполненного проекта масштабирует креативный медиаплан. SWOT-анализ, безусловно, интуитивно допускает традиционный канал. 
-			.photos__links
-				.photos__element
-					a(href="#").photos__element-link
-					.photos__bg(style="background-image: url('./img/photos/bg-1.jpg')")
-					.photos__element-info
-						p.photos__element-title Мотогонки
-						i.photos__element-subtitle Занятие мотоспортом — это всегда скорость и адреналин
-				.photos__element
-					a(href="#").photos__element-link
-					.photos__bg(style="background-image: url('./img/photos/bg-2.jpg')")
-					.photos__element-info
-						p.photos__element-title Отчёт о моем первом Айроне
-						i.photos__element-subtitle Первый IronMan сделан!
-				.photos__element
-					a(href="#").photos__element-link
-					.photos__bg(style="background-image: url('./img/photos/bg-3.jpg')")
-					.photos__element-info
-						p.photos__element-title Дикая природа
-						i.photos__element-subtitle Я очень люблю фотографию и путешествия
-				.photos__element
-					a(href="#").photos__element-link
-					.photos__bg(style="background-image: url('./img/photos/bg-4.jpg')")
-					.photos__element-info
-						p.photos__element-title Мотогонки
-						i.photos__element-subtitle Занятие мотоспортом — это всегда скорость и адреналин
-				.photos__element
-					a(href="#").photos__element-link
-					.photos__bg(style="background-image: url('./img/photos/bg-5.jpg')")
-					.photos__element-info
-						p.photos__element-title Отчёт о моем первом Айроне
-						i.photos__element-subtitle Первый IronMan сделан!
-				.photos__element
-					a(href="#").photos__element-link
-					.photos__bg(style="background-image: url('./img/photos/bg-6.jpg')")
-					.photos__element-info
-						p.photos__element-title Дикая природа
-						i.photos__element-subtitle Я очень люблю фотографию и путешествия
+			.preview-cards
+				.preview-card
+					a(href="#").preview-card__link
+					.preview-card__bg(style="background-image: url('./img/photos/bg-1.jpg')")
+					.preview-card__info
+						a(href="#").preview-card__title Мотогонки
+						i.preview-card__text Занятие мотоспортом — это всегда скорость и адреналин
+				.preview-card
+					a(href="#").preview-card__link
+					.preview-card__bg(style="background-image: url('./img/photos/bg-2.jpg')")
+					.preview-card__info
+						a(href="#").preview-card__title Отчёт о моем первом Айроне
+						i.preview-card__text Первый IronMan сделан!
+				.preview-card
+					a(href="#").preview-card__link
+					.preview-card__bg(style="background-image: url('./img/photos/bg-3.jpg')")
+					.preview-card__info
+						a(href="#").preview-card__title Дикая природа
+						i.preview-card__text Я очень люблю фотографию и путешествия
+				.preview-card
+					a(href="#").preview-card__link
+					.preview-card__bg(style="background-image: url('./img/photos/bg-3.jpg')")
+					.preview-card__info
+						a(href="#").preview-card__title Мотогонки
+						i.preview-card__text Занятие мотоспортом — это всегда скорость и адреналин
+				.preview-card
+					a(href="#").preview-card__link
+					.preview-card__bg(style="background-image: url('./img/photos/bg-5.jpg')")
+					.preview-card__info
+						a(href="#").preview-card__title Отчёт о моем первом Айроне
+						i.preview-card__text Первый IronMan сделан!
+				.preview-card
+					a(href="#").preview-card__link
+					.preview-card__bg(style="background-image: url('./img/photos/bg-6.jpg')")
+					.preview-card__info
+						a(href="#").preview-card__title Дикая природа
+						i.preview-card__text Я очень люблю фотографию и путешествия
+		+page_footer
+		+agreement
 		+scripts

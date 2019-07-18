@@ -1,72 +1,84 @@
 .background
-	position: absolute
-	left: 0
-	top: 0
-	height: 0
-	width: 100%
-	z-index: -1
-	transition: 1.5s height
+		position: absolute
+		left: 0
+		top: 0
+		height: 0
+		width: 100%
+		z-index: -1
+		transition: 1.5s height
 
-	&--green
-		background-color: #4b504d
+		&--green
+			background-color: #4b504d
 
-	&--golden
-		background-color: #8d8267
+		&--golden
+			background-color: #8d8267
 
-	&--blue
-		background-color: #475cbc
+		&--blue
+			background-color: #475cbc
 
-.logo__link
-	span:nth-child(1)
+.index
+	.logo__link
+		span:nth-child(1)
+			position: relative
+			left: -20px
+			opacity: 0
+			transition-delay: 2.5s
+			transition: .8s left, .5s opacity
+
+		span:nth-child(2)
+			position: relative
+			left: -20px
+			opacity: 0
+			transition-delay: 2.9s
+			transition: .8s left, .5s opacity
+
+		i
+			position: relative
+			left: -20px
+			opacity: 0
+			transition-delay: 3.3s
+			transition: .8s left, .5s opacity
+
+	.nav
 		position: relative
 		left: -20px
 		opacity: 0
-		transition-delay: 2.5s
+		transition-delay: 3.8s
 		transition: .8s left, .5s opacity
 
-	span:nth-child(2)
+	.developers
 		position: relative
-		left: -20px
+		bottom: -20px
 		opacity: 0
-		transition-delay: 2.9s
-		transition: .8s left, .5s opacity
+		transition-delay: 4.1s
+		transition: .8s bottom, .5s opacity
 
-	i
+	.footer__language
 		position: relative
-		left: -20px
+		bottom: -20px
 		opacity: 0
-		transition-delay: 3.3s
-		transition: .8s left, .5s opacity
+		transition-delay: 4.4s
+		transition: .8s bottom, .5s opacity
 
-.nav
-	position: relative
-	left: -20px
-	opacity: 0
-	transition-delay: 3.8s
-	transition: .8s left, .5s opacity
+	.social
+		position: relative
+		bottom: -20px
+		opacity: 0
+		transition-delay: 4.7s
+		transition: .8s bottom, .5s opacity
 
-.developers
-	position: relative
-	bottom: -20px
-	opacity: 0
-	transition-delay: 4.1s
-	transition: .8s bottom, .5s opacity
-
-.footer__language
-	position: relative
-	bottom: -20px
-	opacity: 0
-	transition-delay: 4.4s
-	transition: .8s bottom, .5s opacity
-
-.social
-	position: relative
-	bottom: -20px
-	opacity: 0
-	transition-delay: 4.7s
-	transition: .8s bottom, .5s opacity
-
-.work
+.work,
+.about,
+.album,
+.article,
+.blog,
+.feedback,
+.photos,
+.post,
+.publication,
+.publications,
+.sport,
+.works
 	position: relative
 	top: -20px
 	opacity: 0
@@ -74,28 +86,24 @@
 	transition: .8s top, .5s opacity
 
 .animate
-	.logo__link
-		span
+	&.index
+		.logo__link
+			span
+				left: 0
+				opacity: 1
+			i
+				left: 0
+				opacity: 1
+
+		.nav
 			left: 0
 			opacity: 1
-		i
-			left: 0
+
+		.developers,
+		.social,
+		.footer__language
+			bottom: 0
 			opacity: 1
-
-	.nav
-		left: 0
-		opacity: 1
-
-	.developers,
-	.social,
-	.footer__language
-		bottom: 0
-		opacity: 1
-
-	.work
-		transition-delay: 1s
-		top: 0
-		opacity: 1
 
 	&.first
 		.hero__photo--first
@@ -139,3 +147,19 @@
 			z-index: -2
 			transition-delay: 1.5s
 
+
+	.work,
+	.about,
+	.album,
+	.article,
+	.blog,
+	.feedback,
+	.photos,
+	.post,
+	.publication,
+	.publications,
+	.sport,
+	.works
+		transition-delay: 1s
+		top: 0
+		opacity: 1

@@ -1,0 +1,144 @@
+.feedback
+
+	overflow-y: scroll
+	width: 100%
+
+	.wrapper
+		padding-bottom: 50px
+
+	&__text
+		font-size: 18px
+		line-height: 32px
+		font-weight: 300
+		font-family: 'Open Sans'
+		color: #020202
+		margin-bottom: 39px
+
+	.title
+		margin-bottom: 31px
+
+	&__form
+		max-width: 545px
+		width: 100%
+
+	&__field
+		display: flex
+		justify-content: space-between
+		margin-bottom: 18px
+
+		&--radio
+			margin-bottom: 31px
+
+			.feedback__label
+				color: #000000
+				font-size: 14px
+				line-height: 1.3
+
+				a
+					color: #000000
+					border-bottom: 1px solid #000
+					transition: border-color 0.5s ease
+
+					&:hover
+						border-color: transparent
+
+		&--textarea
+			margin-bottom: 26px
+
+
+	&__captcha
+		max-width: 434px
+		width: 100%
+		margin-left: auto
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 35px
+
+		.feedback__input
+			max-width: 215px
+			padding: 8px
+			font-size: 14px
+			text-align: center
+
+			&::placeholder 
+				color: #a2a2a2 
+
+	&__captcha-img
+		max-width: 202px
+		height: 91px
+		margin-right: 10px
+		
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+	&__input
+		max-width: 434px
+		width: 100%
+		height: 38px
+		outline-color: transparent
+		padding: 7px
+		box-sizing: border-box
+		font-size: 18px
+		line-height: 32px
+		font-weight: 300
+		font-family: 'Open Sans'
+		color: #020202
+		border: 1px solid #959595
+
+		&.warning
+			border-color: red
+
+	&__textarea
+		height: 103px
+		resize: none
+	
+
+	&__label
+		font-size: 18px
+		line-height: 32px
+		font-weight: 300
+		font-family: 'Open Sans'
+		color: #020202
+		max-width: 80px
+		width: 100%
+		flex-shrink: 0
+
+	&__radio
+		display: none
+
+		&+label
+			position: relative
+			padding: 0 0 0 26px
+			cursor: pointer
+			display: inherit
+			width: auto
+			max-width: unset
+
+			
+			&:before
+				content: ""
+				position: absolute
+				left: 0
+				top: 1px
+				width: 13px
+				height: 13px
+				border: 1px solid #020202
+			
+			&:after
+				content: ""
+				position: absolute
+				top: 4px
+				left: 3px
+				width: 9px
+				height: 9px
+				background: #4b504d
+				opacity: 0
+				transition: .2s
+
+		&:checked+label:after
+			opacity: 1
+
+	

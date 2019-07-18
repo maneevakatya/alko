@@ -1,0 +1,578 @@
+@media only screen and (max-height: 800px)
+
+    .nav__list
+        margin-bottom: 40px
+
+    .menu
+        height: auto
+        overflow-y: hidden
+        background-color: #4b504d
+        &.opened
+            overflow-y: scroll
+            height: 100vh
+            padding-bottom: 140px
+            .logo
+                margin-bottom: 40px
+
+            .footer__language
+                margin-bottom: 40px
+
+    .animate .background--green,
+    .animate .background--golden,
+    .animate .background--blue
+        display: none
+
+@media screen and (max-width: 1800px) 
+    .publication,
+    .post
+        btn
+            margin-bottom: 35px
+
+    .sport__logos
+        justify-content: space-between
+        flex-wrap: wrap
+
+    .sport__logos a:not(:last-child)
+        margin-right: 0
+
+    .preview-card
+    .album__element,
+        width: calc(100% / 2)
+        height: 420px
+    
+    .about .swiper-button-next
+        z-index: 9999
+
+@media screen and (max-width: 1500px) 
+    .wrapper
+        padding: 0 100px
+        padding-top: 70px
+    
+    .menu
+        padding-top: 70px
+    
+    .about .swiper-button-prev
+        z-index: 9999
+
+    .about .line
+        width: 100%
+        left: 0
+    
+    .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled
+        background-color: #f5f5f5
+        opacity: 1
+
+@media screen and (max-width: 1365px) 
+    .wrapper
+        padding: 0 59px
+        padding-top: 50px
+    
+    .menu
+        padding-top: 50px
+
+    .works__item
+        flex-direction: column
+    
+    .works__title
+        margin-bottom: 30px
+    
+    .works__item-logo
+        text-align: center
+        max-width: unset
+        margin-bottom: 30px
+        margin-right: 0
+    
+    .work__item
+        flex-direction: column
+    
+    .work__item-logo
+        margin-right: 0
+        margin-bottom: 30px
+    
+    .album__element,
+    .preview-card
+        width: 100%
+        height: 500px
+    
+    .about .swiper-slide
+        margin-left: -100px
+    
+    .about__history:before,
+    .about__history:after
+        content: none
+
+@media screen and (max-width: 1200px) 
+
+    .publication__share-text, 
+    .post__share-text
+        display: none
+    
+    .about .swiper-slide
+        margin-left: 0
+
+    .about .line
+        display: none
+
+        
+    .about__element-img
+        margin-right: 0
+        border: 0
+            
+    .about .swiper-slide,
+    .about__element
+        height: auto
+    
+    .about .swiper-slide:first-child
+        margin-left: 0
+
+    .about__element
+        flex-direction: column
+        width: 100%
+    
+    .about__element-img
+        width: 100%
+        height: 400px
+
+        &:before
+            content:none
+    
+    .about
+        margin-bottom: 50px
+
+    .about .swiper-slide:nth-child(2n) .about__element-img:before
+        content: none
+    
+    .history-swiper
+        padding-top: 50px
+        margin-left: -40px
+        margin-right: -40px
+    
+    .about__element-text span
+        position: absolute
+        top: -40px
+    
+    
+    .about .swiper-slide:last-child
+        width: 83%!important
+    
+    .about .swiper-button-next,
+    .about .swiper-button-prev
+        width: 24px
+        height: 47px
+        background-color: transparent
+        top: 57%
+
+    .about .swiper-button-next
+        right: 70px
+    
+    .about .swiper-button-prev
+        left: 70px
+        
+    .about
+        .swiper-button-prev.swiper-button-disabled,
+        .swiper-button-next.swiper-button-disabled
+            opacity: 0
+
+    .about__element-img:before
+        content: none
+    
+    .about__text
+        margin-bottom: 20px
+    
+    .about__element-text
+        width: 95%
+    
+    .about .swiper-slide
+        align-items: flex-start
+
+@media screen and (max-width: 1100px) 
+
+    .about .swiper-button-next,
+    .about .swiper-button-prev
+        top: 534px
+
+@media screen and (max-width: 1023px) 
+
+    .horizontal
+        display: block
+        overflow: visible
+    
+    .hero__photo
+        height: calc(100vh - 150px)
+
+    .menu
+        height: auto
+        padding: 25px 59px
+
+        &.opened
+            height: 100vh
+            overflow-y: scroll
+    
+    .developers__link:first-child
+        margin-right: 10px
+
+    .developers
+        flex-wrap: wrap
+
+    .logo
+        margin-bottom: 0
+
+    .nav,
+    .footer
+        display: none
+        opacity: 1
+        left: auto
+    
+    .social, .footer__language, .developers
+        opacity: 1
+        left: auto
+        transition-delay: unset
+        transition: none
+
+    .footer__language
+        margin-bottom: 75px
+
+    .developers
+        flex-direction: row
+        justify-content: space-between
+
+    .nav
+        margin-top: 50px
+        margin-bottom: 40px
+        transition: none
+    
+    .footer
+        margin-bottom: 0px
+
+    .logo__link span:nth-child(1)
+        opacity: 1
+        left: 0
+        transition-delay: unset
+
+    .logo__link span, .logo__link i
+        opacity: 1
+        left: 0
+        transition-delay: unset
+    
+    .burger-menu 
+        display: block
+    
+    .feedback__field:last-child
+        justify-content: center
+
+    .feedback__captcha
+        max-width: unset
+    
+    .work__subtitle
+        margin-bottom: 30px
+        
+    .post__btns,
+    .publication__btns
+        justify-content: center
+    
+    .post__share,
+    .publication__share
+        justify-content: center
+    
+    .album__element,
+    .preview-card
+        margin: 0 59px
+        margin-bottom: 30px 
+
+    .album__element:last-child,
+    .preview-card:last-child 
+
+        margin-bottom: 0
+    
+    .blog__bg,
+    .photos__bg,
+    .album__bg
+        background-position: center
+    
+    .blog__tags,
+    .publications__tags
+        margin-bottom: 30px
+    
+    .blog__text,
+    .publications__text
+        margin-bottom: 30px
+    
+    .blog,
+    .photos,
+    .album,
+    .publications
+        .wrapper
+            padding-bottom: 0
+        
+    .logo__link span
+        font-size: 30px
+        line-height: 35px
+        margin-bottom: 0
+    
+    .page_footer
+        display: flex
+    
+    .album__element,
+    .preview-card
+        margin: 0 20px
+        margin-bottom: 30px  
+    
+    .burger-menu 
+        top: 20px
+        right: 20px
+    
+    .menu,
+    .page_footer
+        padding: 20px
+
+    .wrapper
+        padding: 20px
+        padding-top: 40px
+    
+    .hero__photo
+        height: calc(100vh - 140px)
+    
+    .history-swiper
+        margin-left: -20px
+        margin-right: -20px
+    
+    .about .swiper-slide:last-child
+        width: 88%!important
+    
+    .about .swiper-button-next,
+    .about .swiper-button-prev 
+        top: auto
+        bottom: 34%
+    
+
+@media screen and (max-width: 800px) 
+
+    .agreement
+        width: 90%
+    
+    .hero__photo
+        height: calc(100vh - 119px)
+
+    .album__element,
+    .preview-card
+        height: 354px
+        
+    .logo__link span,
+    .title
+        font-size: 30px
+        line-height: 27px
+
+    .logo__link i
+        font-size: 25px
+        line-height: 1
+    
+    .post__btns,
+    .publication__btns
+        margin-bottom: 30px
+    
+    .preview-card__info
+        min-height: 100px
+        height: auto
+    
+
+@media screen and (max-width: 600px) 
+        
+    .logo__link span
+        margin-bottom: 0
+
+    .publication,
+    .post
+        .btn
+            line-height: 1
+            align-items: center
+            display: flex
+            font-size: 18px
+            padding: 15px
+            justify-content: center
+    
+    .publication__quote,
+    .post__quote
+        padding: 0 30px
+        &:before,
+        &:after
+            font-size: 60px
+        
+        &:before
+            left: -7px
+    
+    .sport__logos
+        flex-direction: column
+        margin-bottom: 50px
+
+    .sport__logos a:not(:last-child)
+        margin-bottom: 50px
+    
+    .sport__text
+        margin-bottom: 50px
+
+    .feedback__field--radio .feedback__label
+        font-size: 13px
+
+    .feedback__captcha .feedback__input
+        font-size: 13px
+    
+    .feedback__captcha-img
+        max-width: 120px
+        height: 50px
+        flex-shrink: 0
+    
+    .at-style-responsive .at-share-btn:not(:last-child)
+        margin-right: 5px
+    
+    .at-style-responsive .at-share-btn
+        padding: 3px!important
+        
+    .album__element, 
+    .preview-card
+        margin-bottom: 20px
+        height: 320px
+    
+    .preview-card__info,
+        padding: 15px
+        justify-content: center
+    
+    .bottom-swiper__element
+        height: 300px
+
+    .bottom-swiper__element-info
+        padding: 15px
+        justify-content: center
+    
+    .bottom-swiper__element-title
+        font-size: 14px
+    
+    .bottom-swiper__element-subtitle
+        font-size: 16px
+
+    .preview-card__title
+        font-size: 15px
+    
+    .preview-card__subtitle
+        font-size: 14px
+
+    .preview-card__subtitle, 
+        flex-wrap: wrap
+    
+    .about__element-img
+        height: 250px
+    
+    .about .swiper-button-prev
+        top: 67%
+        left: 40px
+    
+    .about .swiper-button-next
+        top: 67%
+        right: 40px
+    
+    .title:after
+        right: -30px
+    
+    .album__subtitle
+        display: block
+
+    .hero__photo img
+        height: 100%
+        object-fit: cover
+    
+    .hero__photo
+        &--third
+            img
+                left: 78%
+
+    
+    
+@media screen and (max-width: 500px) 
+
+    .preview-card
+        height: 280px
+    
+    .album__element
+        height: 250px
+    
+    .developers__link
+        border: 0
+        text-decoration: underline
+        line-height: 1.5
+        font-size: 10px
+        display: block
+        margin: 0
+        align-self: center
+    
+    .developers__link:last-child
+        flex-shrink: 0
+    
+    .logo__link i
+        font-size: 18px
+    
+    .logo__link span
+        font-size: 20px
+        line-height: 22px
+    
+    .menu
+        padding: 15px 20px
+    
+    .burger-menu
+        top: 15px
+    
+    .nav__item
+        margin-bottom: 15px
+    
+    .nav__link
+        font-size: 14px
+    
+    .about__element-img
+        height: 170px
+    
+    .hero__photo
+        height: calc(100vh - 92px)
+
+
+@media screen and (max-width: 374px) 
+
+    .publication,
+    .post
+        btn
+            font-size: 15px
+    
+    .hero__photo
+        height: calc(100vh - 94px)
+
+    .logo__link i
+        font-size: 20px
+
+    .feedback__field--radio .feedback__label
+        display: block
+
+    .feedback__field--radio .feedback__label a
+        display: block
+    
+    .at-style-responsive .at-share-btn:not(:last-child)
+        margin-right: 2px
+    
+    .at-style-responsive .at-share-btn
+        padding: 2px!important
+    
+    .about .swiper-button-prev,
+    .about .swiper-button-next
+        top: 69%
+    
+    .history-swiper
+        margin-right: -30px
+        margin-left: -30px
+    
+    .preview-card
+        height: 250px
+        margin-left: 20px
+        margin-right: 20px
+    
+    .footer__language
+        margin-bottom: 25px
+    
+    .bottom-swiper__element
+        height: 250px
+    

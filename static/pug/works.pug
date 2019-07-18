@@ -6,8 +6,8 @@ html(lang="ru")
 	body.horizontal.first
 		+header
 		.works
-			.works__over
-				h1.works__title Моя работа
+			.wrapper
+				h1.title  Моя работа
 				.works__list
 					.works__item
 						.works__item-logo
@@ -34,23 +34,29 @@ html(lang="ru")
 							img(src="./img/works/logo-5.jpg", alt="")
 						.works__item-text
 							p Точка перегиба отличительно трансформирует двойной интеграл. Стабилизатор основан на опыте. Математическая статистика устойчиво создает метод последовательных приближений. Функция выпуклая книзу, в отличие от некоторых других случаев, переворачивает анормальный ряд Тейлора.
-			.works__links
-				.works__element
-					a(href="#").works__element-link
-					.works__bg(style="background-image: url('./img/works/bg-1.jpg')")
-					.works__element-info
-						p.works__element-title Конференция «кадры россии»
-						i.works__element-subtitle Выступил с докладом о кадровом потенциале нашей страны
-				.works__element
-					a(href="#").works__element-link
-					.works__bg(style="background-image: url('./img/works/bg-2.jpg')")
-					.works__element-info
-						p.works__element-title Курчатовские чтения
-						i.works__element-subtitle В академии РАНХиГС, от первого лица
-				.works__element
-					a(href="#").works__element-link
-					.works__bg(style="background-image: url('./img/works/bg-3.jpg')")
-					.works__element-info
-						p.works__element-title Россия страна возможностей
-						i.works__element-subtitle Послание Президента России Федеральному собранию
+			.swiper-container.bottom-swiper
+				.swiper-wrapper
+					.swiper-slide 
+						.bottom-swiper__element
+							a(href="#").bottom-swiper__element-link
+							.bottom-swiper__element-bg(style="background-image: url('./img/works/bg-1.jpg')")
+							.bottom-swiper__element-info
+								a(href="#").bottom-swiper__element-title Конференция «кадры россии»
+								i.bottom-swiper__element-subtitle Выступил с докладом о кадровом потенциале нашей страны
+					.swiper-slide 
+						.bottom-swiper__element
+							a(href="#").bottom-swiper__element-link
+							.bottom-swiper__element-bg(style="background-image: url('./img/works/bg-2.jpg')")
+							.bottom-swiper__element-info
+								a(href="#").bottom-swiper__element-title Курчатовские чтения
+								i.bottom-swiper__element-subtitle В академии РАНХиГС, от первого лица
+					.swiper-slide 
+						.bottom-swiper__element
+							a(href="#").bottom-swiper__element-link
+							.bottom-swiper__element-bg(style="background-image: url('./img/works/bg-3.jpg')")
+							.bottom-swiper__element-info
+								a(href="#").bottom-swiper__element-title Россия страна возможностей
+								i.bottom-swiper__element-subtitle Послание Президента России Федеральному собранию
+		+page_footer
+		+agreement
 		+scripts

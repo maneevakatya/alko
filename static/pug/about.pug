@@ -6,18 +6,19 @@ html(lang="ru")
 	body.horizontal.first
 		+header
 		.about
-			.about__over
-				h1.about__title Биография
+			.wrapper
+				h1.title Биография
 				.about__text
 					p Я не знаю, хорошо это или плохо, но мне в жизни для достижения результата нужен какой-то серьезный вызов. Я не умею заниматься процессами ради процессов или ради абстрактной цели.
+			.about__history-wrapper.wrapper
 				.about__history
 					.line
-					.swiper-container
+					.swiper-container.history-swiper
 						.swiper-wrapper
 							.swiper-slide 
 								.about__element
 									.about__element-img
-										img(src="./img/about/about-img2.jpg", alt="")
+										img(src="./img/index/photo-1.jpg", alt="")
 									.about__element-text 
 										span 1986
 										p Поступил на дневное отделение Московского Автомобильно-дорожного института на факультет автомобильного транспорта.
@@ -42,6 +43,8 @@ html(lang="ru")
 									.about__element-text 
 										span 2011
 										p Возглавил Департамент поддержки малого и среднего предпринимательства.
-					.swiper-button-prev
-					.swiper-button-next
+			.swiper-button-prev
+			.swiper-button-next
+		+page_footer
+		+agreement
 		+scripts
