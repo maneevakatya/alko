@@ -27,7 +27,7 @@
 		"gulp-postcss": "^8.0.0",
 		"gulp-rename": "^1.2.2",
 		"gulp-sequence": "^1.0.0",
-		"node-sass": "^4.11.0",
+		"node-sass": "^7.0.0",
 		"gulp-uglify": "^3.0.0",
 		"gulp-wait": "^0.0.2",
 		"imagemin-pngquant": "^7.0.0",
